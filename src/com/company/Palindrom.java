@@ -3,7 +3,8 @@ package com.company;
 import java.util.Scanner;
 
 public class Palindrom {
-
+    char left_char ;
+    char right_char ;
     public String  NechetPalindrom(String input) {
         int max = 0;
         String result = "";
@@ -11,8 +12,6 @@ public class Palindrom {
         for (int indexMiddle = 1; indexMiddle < input.length() - 1; indexMiddle++) {
             int left = indexMiddle - 1;
             int right=indexMiddle+1;
-            char left_char ;
-            char right_char ;
             int amount = 0;
                     while (left >= 0 && right < input.length() && input.charAt(left) == input.charAt(right)) {
                         left_char = input.charAt(left--);
@@ -33,8 +32,6 @@ public class Palindrom {
             for (int indexMiddle = 1; indexMiddle < input.length() - 1; indexMiddle++) {
                 int left = indexMiddle ;
                 int right=indexMiddle +1;
-                char left_char ;
-                char right_char ;
                 int amount = 0;
                 while (left >= 0 && right < input.length() && input.charAt(left) == input.charAt(right)) {
                     left_char = input.charAt(left--);

@@ -12,6 +12,7 @@ public class Main {
             inD += inputDate;
         }
             Palindrom call=new Palindrom();
+        System.out.println("Подстрока максимальной длины, являющуяся палиндромом:");
             if(call.ChetPalindrom(inD).length()>call.NechetPalindrom(inD).length()){
                 System.out.println(call.ChetPalindrom(inD));
             }
